@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import { styled } from "@mui/system";
 import { Box, List, Typography } from "@mui/material";
 import "@fontsource/montez"
 import { Colors } from "../theme";

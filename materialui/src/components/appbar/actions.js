@@ -1,6 +1,7 @@
 import { Divider, ListItemButton, ListItemIcon, colors } from "@mui/material";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
+import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { ActionIconsContainerDesktop, ActionIconsContainerMobile, AppBarContainer, AppHeader, Mylist } from "../../styles/appbar";
 import { Colors } from "../../styles/theme";
@@ -14,6 +15,20 @@ ActionIconsContainerDesktop;
 
   return (
 <Component>    <Mylist type="row">
+<ListItemButton
+      sx={{
+        justifyContent:'center',
+      }}>
+        <ListItemIcon
+        sx={{
+            display:'flex',
+            justifyContent:'center',
+            color: matches && Colors.secundary
+        }}
+        >
+  <SearchIcon />
+  </ListItemIcon>
+      </ListItemButton>
       <ListItemButton
       sx={{
         justifyContent:'center',

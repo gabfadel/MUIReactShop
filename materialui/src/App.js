@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import theme from './styles/theme';
 import AppBar from './components/appbar';
 import Banner from './components/banner';
+import Promotions from './components/promotions';
+import Products from './components/product';
 
 
 function App() {
@@ -27,6 +29,8 @@ sx={{
 
 <AppBar />
 <Banner />
+<Promotions />
+<Products />
 
 
 
