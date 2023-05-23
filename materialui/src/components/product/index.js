@@ -2,6 +2,7 @@ import { useTheme } from "@mui/material/styles";
 import { Grid, UseMediaQuery, useMediaQuery } from "@mui/material";
 import {products} from "../../data"
 import { Container } from "@mui/system";
+import SingleProduct from "./singleProducts";
 
 
 export default function Products(){
@@ -13,7 +14,7 @@ export default function Products(){
     const renderProducts = products.map(product =>(
         <Grid item key={product.id} display="flex" flexDirection={"column"}
         alignItems="center">
-
+        <SingleProduct product= {product} matches={matches} />
         </Grid>
     ))
     return(<Container><Grid
