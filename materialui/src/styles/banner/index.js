@@ -62,11 +62,11 @@ export const BannerDescription = styled(Typography)(({ theme }) => ({
 }));
 
 export const BannerShopButton = styled(Button, {
-  // Configure which props should be forwarded on DOM
+
   shouldForwardProp: (prop) => prop !== "color",
   name: "MyShopButton",
   slot: "Root",
-  // We are specifying here how the styleOverrides are being applied based on props
+  
   overridesResolver: (props, styles) => [
     styles.root,
     props.color === "primary" && styles.primary,

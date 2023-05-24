@@ -1,6 +1,6 @@
 import { Typography,useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerTittle } from "../../styles/banner";
+import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerShopButton, BannerTittle } from "../../styles/banner";
 import Promotions from "../promotions";
 
 export default function Banner(){
@@ -14,8 +14,9 @@ export default function Banner(){
                         <Typography variant='h6'>Huge Collection</Typography>
                         <BannerTittle variant="h2">New Bags</BannerTittle>
                         <BannerDescription variant="subtitle">
-                            bhsfbfdbjkasfbdjkafsdjkmfjdsfakkdasfkj
+                            Gabriel's Mui Project Shopping
                         </BannerDescription>
+                        <BannerShopButton color="primary">SHOW NOW</BannerShopButton>
                        
                        
        </BannerContent>

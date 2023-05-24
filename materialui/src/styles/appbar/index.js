@@ -1,7 +1,7 @@
 import { styled } from "@mui/system";
-import { Box, List, Typography } from "@mui/material";
+import { Box, IconButton, List, Typography } from "@mui/material";
 import "@fontsource/montez"
-import { Colors } from "../theme";
+import { Colors, DrawerWidth } from "../theme";
 import { backgrounds } from "polished";
 
 //container
@@ -53,3 +53,9 @@ export const ActionIconsContainerDesktop= styled(Box)(()=>({
 }))
 
 
+export const DrawerCloseButton = styled(IconButton)(() => ({
+    position: 'absolute',
+    top: 10,
+    left: DrawerWidth,
+    zIndex: 1999,      
+  }));
